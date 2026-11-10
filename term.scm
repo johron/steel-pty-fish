@@ -87,7 +87,7 @@
   void)
 
 (unless (which "zsh")
-  (set-default-shell! (which "bash")))
+  (set-default-shell! (which "fish")))
 
 (when (equal? (current-os!) "windows")
   (set-default-shell! (which "powershell")))

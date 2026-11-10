@@ -207,7 +207,7 @@ fn create_module() -> FFIModule {
             terminal: Terminal::new(
                 wezterm_term::TerminalSize::default(),
                 Arc::new(TermConfig::new()),
-                "bash",
+                "fish",
                 "0.1.0",
                 Box::new(pty.writer.clone()),
             ),
@@ -220,7 +220,7 @@ fn create_module() -> FFIModule {
             terminal: Terminal::new(
                 wezterm_term::TerminalSize::default(),
                 Arc::new(TermConfig::new()),
-                "bash",
+                "fish",
                 "0.1.0",
                 Box::new(std::io::empty()),
             ),
